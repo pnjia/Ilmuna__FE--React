@@ -2,21 +2,45 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./Login.css";
 import { faX } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 
 export const Login = () => {
+  const [showLogin, setShowLogin] = useState(false);
+
+  useEffect(() => {
+    if (showLogin) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    }
+  }, [showLogin])
+
+  const handleButtonLogin = () => {
+    setShowLogin(true)
+  }
+
+  const handleXButton = (e) => {
+    e.preventDefault()
+    setShowLogin(false)
+  }
+
   return (
     <>
-      <Navbar />
-      <div className="form__container">
+      <Navbar handleButtonLogin={handleButtonLogin}/>
+      <div className="form__container" style={{display: showLogin ? 'flex': 'none'}}>
         <form className="login__form" action="">
           <div className="login__nav">
             <div>
               <h1>Masuk</h1>
             </div>
             <div>
-              <p>
+              <button className="x__button" onClick={handleXButton}>
                 <FontAwesomeIcon icon={faX} />
-              </p>
+              </button>
             </div>
           </div>
           <input type="text" placeholder="Username/Email" />
@@ -26,7 +50,7 @@ export const Login = () => {
           </p>
           <button type="submit">Masuk</button>
           <p>atau</p>
-          <button>
+          <button className="login__google">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

@@ -2,7 +2,8 @@ import './Navbar.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
 
-export const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+export const Navbar = ({handleButtonLogin}) => {
   return (
     <>
       <div className="navbar">
@@ -20,7 +21,7 @@ export const Navbar = () => {
             <a href="/">Courses</a>
           </li>
           <li>
-            <a href="/">Masuk</a>
+            <a onClick={handleButtonLogin}>Masuk</a>
           </li>
           <li>
             <a href="/">Daftar</a>

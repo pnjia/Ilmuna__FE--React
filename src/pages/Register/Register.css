@@ -117,6 +117,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .register__form {
+        height: fit-content;
+    }
+
     .register__form .register__nav div h1{
         font-size: var(--font-size-large);
     }

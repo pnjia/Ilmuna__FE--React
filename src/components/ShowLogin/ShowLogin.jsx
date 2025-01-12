@@ -1,29 +1,31 @@
+import { faEye, faEyeSlash, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Navbar } from "../../components/Navbar/Navbar";
-import "./Login.css";
-import { faEye, faEyeSlash} from "@fortawesome/free-solid-svg-icons";
+import "./ShowLogin.css";
 import { useState } from "react";
 
-
-export const Login = () => {
-  // eslint-disable-next-line no-unused-vars
-  const [isOnPageLogin, setIsOnPageLogin] = useState(true)
+// eslint-disable-next-line react/prop-types
+export const ShowLogin = ({ showLogin, handleXButton }) => {
   const [showPassword, setShowPassword] = useState(false)
 
   const handleShowPassword = () => {
     setShowPassword(!showPassword)
   }
-  
+
   return (
     <>
-      <Navbar isOnPageLogin={isOnPageLogin} />
-            <div
-        className="form__container__page"
+      <div
+        className="form__container"
+        style={{ display: showLogin ? "flex" : "none" }}
       >
         <form className="login__form" action="">
           <div className="login__nav">
             <div>
               <h1>Masuk</h1>
+            </div>
+            <div>
+              <button className="x__button" onClick={handleXButton}>
+                <FontAwesomeIcon icon={faX} />
+              </button>
             </div>
           </div>
           <div className="inputs">
@@ -33,8 +35,8 @@ export const Login = () => {
             <div className="input">
 
             <input type={showPassword ? "text" :"password"} name="password" placeholder="Password" required/>
-            <span><FontAwesomeIcon icon={faEye} onClick={() => handleShowPassword()} style={{display: showPassword ? 'none': 'inline'}}/></span>
-            <span><FontAwesomeIcon icon={faEyeSlash} onClick={() => handleShowPassword()} style={{display: showPassword ? 'inline': 'none'}}/></span>
+            <span><FontAwesomeIcon icon={faEye} onClick={handleShowPassword} style={{display: showPassword ? 'none': 'inline'}}/></span>
+            <span><FontAwesomeIcon icon={faEyeSlash} onClick={handleShowPassword} style={{display: showPassword ? 'inline': 'none'}}/></span>
             </div>
           </div>
           <p className="forgot__password">
@@ -70,7 +72,7 @@ export const Login = () => {
             </svg>
             <span>Masuk dengan Google</span>
           </button>
-          <p>Belum punya akun? <a href="/register">Ayo daftar</a></p>
+          <p>Belum punya akun? <a href="">Ayo daftar</a></p>
         </form>
       </div>
     </>

@@ -1,0 +1,168 @@
+.form__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;       
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.login__nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    padding: 16px;
+}
+
+.login__nav .x__button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+}
+
+.login__form {
+    position: relative;
+    min-width: 270px;
+    width: 35%;
+    height: 90%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    background-color: white;
+    border-radius: 5px;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login__form .inputs {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.login__form .inputs .input > input {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+}
+
+.login__form .inputs .input > input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+
+.login__form .input  span {
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+.login__form .forgot__password {
+    width: 100%;
+    text-align: right;
+}
+
+.login__form p {
+    text-align: center;
+    width: 100%;
+}
+
+.login__form p a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.login__form button {
+    padding: 4px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login__form .login__google {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 4px;
+    font-size: var(--font-size-medium);
+    border: 1px solid black;
+}
+
+.login__form .login__google svg {
+    flex-shrink: 0;
+}
+
+.button__google span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .login__form .login__nav h1 {
+        font-size: var(--font-size-large);
+    }
+
+    .login__form .forgot__password {
+        font-size: var(--font-size-small);
+    }
+
+    .login__form button {
+        font-size: var(--font-size-medium);
+    }
+
+    .login__form .login__google {
+        font-size: var(--font-size-small);
+    }
+
+    .login__nav x__button {
+        cursor: pointer;
+        font-size: var(--font-size-large);
+    }
+}

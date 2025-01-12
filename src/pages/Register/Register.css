@@ -1,0 +1,123 @@
+.form__container__register {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.register__form {
+    position: relative;
+    min-width: 270px;
+    width: 40%;
+    height: 100%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    background-color: white;
+    border-radius: 5px;
+    animation: slideDown 0.3s ease-out;
+}
+
+.register__form .register__nav{
+    width: 100%;
+}
+.register__form .register__nav h1{
+    font-size: var(--font-size-large);
+}
+
+.register__form .inputs {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    position: relative;
+}
+
+.register__form .inputs .input>input {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+}
+
+.register__form .inputs .input>input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+
+.register__form .input .eyes__password {
+    position: absolute;
+    right: 5px;
+    bottom:52px;
+}
+
+.register__form .input span {
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+
+.register__form .forgot__password {
+    width: 100%;
+    text-align: right;
+}
+
+.register__form p {
+    text-align: center;
+    width: 100%;
+}
+
+.register__form p a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.register__form button {
+    padding: 4px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.register__form .register__google {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--font-size-small);
+    border: 1px solid black;
+}
+
+.register__form .register__google svg {
+    flex-shrink: 0;
+}
+
+.button__google span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .register__form .register__nav div h1{
+        font-size: var(--font-size-large);
+    }
+}

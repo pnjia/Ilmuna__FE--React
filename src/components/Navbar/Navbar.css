@@ -16,7 +16,14 @@
 
 .navbar__hamburger__menu {
     display: none;
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    z-index: 99999;
 }
+
+
+
 
 .navbar__menu {
     display: flex;
@@ -55,15 +62,92 @@
     cursor: pointer;
 }
 
+.navbar__menu__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 64px 8px 0px 8px;
+    background-color: white;
+    animation: slideDown 0.3s ease-out;
+}
+
+.navbar__menu__mobile div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.navbar__menu__mobile div:nth-child(1) button {
+    padding: 8px;
+}
+
+
+
+.navbar__menu__mobile .logreg {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar__menu__mobile div:last-child {
+    width: 100%;
+}
+
+.navbar__menu__mobile div:last-child > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.navbar__menu__mobile div:last-child > ul > li {
+    list-style-type: none;
+}
+
+.navbar__menu__mobile div > button:first-child {
+    padding-inline: 32px;
+    padding-block: 8px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.navbar__menu__mobile div > button:first-child a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navbar__menu__mobile div>button:last-child {
+    padding-inline: 32px;
+    padding-block: 8px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.navbar__menu__mobile div > button:last-child a {
+    text-decoration: none;
+    color: white;
+}
+
 @media only screen and (max-width: 768px) {
     .navbar__hamburger__menu {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: var(--font-size-large);
+        cursor: pointer;
     }
 
     .navbar__menu {
         display: none;
+    }
+    .navbar__menu__mobile {
+        display: flex;
     }
 }

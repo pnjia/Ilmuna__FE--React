@@ -30,7 +30,7 @@ export const Navbar = ({ isOnPageLogin }) => {
   };
 
   const handleButtonModal = () => {
-    setShowModal(true);
+    setShowModal(!showModal);
   };
 
   const handleXButtonLogin = (e) => {

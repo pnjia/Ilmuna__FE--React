@@ -1,6 +1,7 @@
 .navbar {
+    min-width: 300px;
     width: 100%;
-    height: 67px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     padding-inline: 24px;
@@ -94,6 +95,10 @@
     text-align: center;
 }
 
+.navbar__menu__mobile .logreg button a {
+    font-weight: 600;
+}
+
 .navbar__menu__mobile div:last-child {
     width: 100%;
 }
@@ -106,6 +111,13 @@
 
 .navbar__menu__mobile div:last-child > ul > li {
     list-style-type: none;
+}
+
+.navbar__menu__mobile div:last-child > ul > li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: var(--font-size-medium);
 }
 
 .navbar__menu__mobile div > button:first-child {

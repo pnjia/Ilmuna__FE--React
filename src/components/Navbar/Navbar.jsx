@@ -73,8 +73,8 @@ export const Navbar = ({ isOnPageLogin }) => {
           </div>
           <div>
             <ul>
-              <li>Home</li>
-              <li>Courses</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/course">Courses</a></li>
             </ul>
           </div>
         </div>

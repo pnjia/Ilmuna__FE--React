@@ -1,0 +1,80 @@
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    height: 100vh;
+    padding: 16px;
+    background-color: var(--tertiary-color);
+}
+
+.sidebar h3 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.sidebar .certificate__btn {
+    text-align: center;
+}
+.sidebar .certificate__btn button {
+    background-color: transparent;
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+}
+
+.sidebar .sidebar__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .sidebar__logo h1 {
+    font-weight: 700;
+    
+}
+
+
+.sidebar .course__title {
+    border: var(--secondary-color) solid 2px;
+    text-align: center;
+}
+
+.sidebar .course__title a {
+    text-decoration: none;
+    color: black;
+}
+.course__container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+}
+
+.course__container .pagination {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.course__container .pagination div button {
+    padding-block: 4px;
+    padding-inline: 8px;
+}
+
+.course__container .course .course__video__title {
+    margin-bottom: 16px;
+}
+
+.course__video {
+    width: 700px;
+    height: 400px;
+    background-color: black;
+}

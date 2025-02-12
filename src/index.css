@@ -1,7 +1,8 @@
 :root {
   --primary-color: #388e3cff;
   --secondary-color: #A5E25F;
-  --tertiary-color: #ECECEC;
+  --tertiary-color: #DDEDE0;
+  --quartenary-color: #F2F9F1;
   --font-size-small: 12px;
   --font-size-medium: 16px;
   --font-size-large: 24px;
@@ -21,4 +22,5 @@ body {
   display: flex;
   flex-direction: column;
   height: 1000vh;
+  background-color: var(--tertiary-color);
 }

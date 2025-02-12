@@ -17,7 +17,7 @@ export const ShowLogin = ({ showLogin, handleXButton }) => {
         className="form__container"
         style={{ display: showLogin ? "flex" : "none" }}
       >
-        <form className="login__form" action="">
+        <form className="showlogin__form" action="">
           <div className="login__nav">
             <div>
               <h1>Masuk</h1>

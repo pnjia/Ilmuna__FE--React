@@ -1,0 +1,10 @@
+.footer {
+    background-color: var(--secondary-color);
+    height: 298px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--quartenary-color);
+}
+.footer div {
+    border: 2px solid black;
+}

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     padding-inline: 24px;
-
+    background-color: var(--tertiary-color);
 }
 
 .navbar__brand {

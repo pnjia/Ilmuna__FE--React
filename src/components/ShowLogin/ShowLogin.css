@@ -32,7 +32,7 @@
     color: black;
 }
 
-.login__form {
+.showlogin__form {
     position: relative;
     min-width: 270px;
     width: 35%;
@@ -61,7 +61,7 @@
     }
 }
 
-.login__form .inputs {
+.showlogin__form .inputs {
     width: 100%;
     display: flex;
     gap: 8px;
@@ -71,7 +71,7 @@
 
 
 
-.login__form .inputs .input > input {
+.showlogin__form .inputs .input > input {
     padding: 8px;
     width: 100%;
     border: none;
@@ -80,12 +80,12 @@
     border-radius: 5px;
 }
 
-.login__form .inputs .input > input:focus {
+.showlogin__form .inputs .input > input:focus {
     outline: 2px solid var(--primary-color);
 }
 
 
-.login__form .input  span {
+.showlogin__form .input  span {
     position: absolute;
     right: 5px;
     bottom: 3px;
@@ -94,22 +94,22 @@
 }
 
 
-.login__form .forgot__password {
+.showlogin__form .forgot__password {
     width: 100%;
     text-align: right;
 }
 
-.login__form p {
+.showlogin__form p {
     text-align: center;
     width: 100%;
 }
 
-.login__form p a {
+.showlogin__form p a {
     text-decoration: none;
     color: var(--primary-color);
 }
 
-.login__form button {
+.showlogin__form button {
     padding: 4px;
     width: 100%;
     outline: none;
@@ -122,7 +122,7 @@
     cursor: pointer;
 }
 
-.login__form .login__google {
+.showlogin__form .login__google {
     background-color: white;
     color: black;
     display: flex;
@@ -134,7 +134,7 @@
     border: 1px solid black;
 }
 
-.login__form .login__google svg {
+.showlogin__form .login__google svg {
     flex-shrink: 0;
 }
 
@@ -144,26 +144,26 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .login__form {
+    .showlogin__form {
         height: fit-content;
     }
-    .login__form .login__nav h1 {
+    .showlogin__form .login__nav h1 {
         font-size: var(--font-size-large);
     }
 
-    .login__form .forgot__password {
+    .showlogin__form .forgot__password {
         font-size: var(--font-size-small);
     }
 
-    .login__form button {
+    .showlogin__form button {
         font-size: var(--font-size-medium);
     }
 
-    .login__form .login__google {
+    .showlogin__form .login__google {
         font-size: var(--font-size-small);
     }
 
-    .login__nav x__button {
+    .showlogin__nav x__button {
         cursor: pointer;
         font-size: var(--font-size-large);
     }

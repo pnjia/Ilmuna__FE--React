@@ -21,18 +21,31 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding-block: 16px;
+}
 
-    padding: 16px;
+.login__nav > div > button {
+    background-color: transparent;
 }
 
 .login__nav .x__button {
+    position: relative;
+    right: -30px;
+    bottom: 0;
     cursor: pointer;
-    font-size: 1.5rem;
-    background-color: white;
+    padding: 4px;
+    font-size: var(--font-size-large);
+    background-color: transparent;
     color: black;
 }
 
+<<<<<<< HEAD
 .showlogin__form {
+=======
+
+
+.login__form {
+>>>>>>> 45150c90c077780cdbada8efaf41639ff7a8b550
     position: relative;
     min-width: 270px;
     width: 35%;
@@ -109,8 +122,14 @@
     color: var(--primary-color);
 }
 
+<<<<<<< HEAD
 .showlogin__form button {
     padding: 4px;
+=======
+.login__form button {
+    padding-inline: 32px;
+    padding-block: 8px;
+>>>>>>> 45150c90c077780cdbada8efaf41639ff7a8b550
     width: 100%;
     outline: none;
     border: none;
@@ -129,7 +148,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 4px;
+    padding-inline: 32px;
+    padding-block: 8px;
     font-size: var(--font-size-medium);
     border: 1px solid black;
 }
@@ -147,7 +167,16 @@
     .showlogin__form {
         height: fit-content;
     }
+<<<<<<< HEAD
     .showlogin__form .login__nav h1 {
+=======
+
+    .login__form p {
+        font-size: var(--font-size-small)
+    }
+
+    .login__form .login__nav h1 {
+>>>>>>> 45150c90c077780cdbada8efaf41639ff7a8b550
         font-size: var(--font-size-large);
     }
 

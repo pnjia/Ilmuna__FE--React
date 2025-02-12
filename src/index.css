@@ -21,6 +21,7 @@
 body {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
   height: 1000vh;
   background-color: var(--tertiary-color);
 }

@@ -23,8 +23,8 @@ export const ShowLogin = ({ showLogin, handleXButton }) => {
               <h1>Masuk</h1>
             </div>
             <div>
-              <button className="x__button" onClick={handleXButton}>
-                <FontAwesomeIcon icon={faX} />
+              <button >
+                <FontAwesomeIcon className="x__button" onClick={handleXButton} icon={faX} />
               </button>
             </div>
           </div>
